@@ -2,9 +2,9 @@
 
 var Blog = Backbone.Model.extend({
   defaults: {
-	  author: '', 
-	  title: '',
-	  url: ''
+    author: '', 
+    title: '',
+    url: ''
   }
 });
 
