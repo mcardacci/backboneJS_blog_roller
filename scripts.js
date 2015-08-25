@@ -49,7 +49,7 @@ var BlogsView = Backbone.View.extend({
     var self = this;
     this.$el.html('');
     _.each(this.model.toArray, function(blog) {
-      self.$el
+      self.$el.append((new BlogView({model: blog})).render().$el);
     })
   }
 });
