@@ -84,7 +84,7 @@ var BlogsView = Backbone.View.extend({
     var self = this;
     this.model.on('add', this.render, this);
     this.model.on('change', function() {
-      setTimeout(function() {
+      setTimeout(function() {				//need setTimeout bc title and url update won't register
         self.render();
       }, 30);
     },this);

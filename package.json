@@ -1,0 +1,23 @@
+{
+  "name": "backbonejs_blog_roller",
+  "version": "1.0.0",
+  "description": "",
+  "main": "scripts.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mcardacci/backboneJS_blog_roller.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mcardacci/backboneJS_blog_roller/issues"
+  },
+  "homepage": "https://github.com/mcardacci/backboneJS_blog_roller#readme",
+  "dependencies": {
+    "ess": "^1.0.0",
+    "express": "^4.13.3"
+  }
+}
