@@ -18,6 +18,7 @@
   "homepage": "https://github.com/mcardacci/backboneJS_blog_roller#readme",
   "dependencies": {
     "ess": "^1.0.0",
-    "express": "^4.13.3"
+    "express": "^4.13.3",
+    "mongoose": "^4.1.3"
   }
 }
