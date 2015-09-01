@@ -16,25 +16,25 @@ mongoose.model('Blog', BlogSchema);
 
 var Blog = mongoose.model('Blog');
 
-// var blog = new Blog({
-//  author: "Marco",
-//  title: "Marco's Blog",
-//  url: "http://marcosblog.com"
-// });
+var blog = new Blog({
+ author: "Marco",
+ title: "Marco's Blog",
+ url: "http://marcosblog.com"
+});
 
-// blog.save();
+blog.save();
 
 var app = express();
 
 app.use(bodyParser.json());
 app.use(express.static(__dirname + '/public'));
 
-//ROUTES!!!!
+//ROUTES!!!! Usually want to put this in different folder. More modular.
 
 app.get('/api/blogs', function(req, res) {
   Blog.find(function(err, docs) {
     docs.forEach(function(item) {
-      console.log("recieved a GET request for _id" + item._id);
+      console.log("recieved GET request for _id" + item._id);
     })
     res.send(docs);
   });
