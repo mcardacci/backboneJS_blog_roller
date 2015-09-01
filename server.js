@@ -45,12 +45,25 @@ app.post('/api/blogs', function(req, res) {
   for (var key in req.body) {
     console.log(key + ": " + req.body[key]);
   }
-  var blog = new Blog(req.body);   
+  var blog = new Blog(req.body);   // Uses body-parser to turn into JSON and retrieve request body
   blog.save(function(err, doc) {
-    res.semd(doc);
-  })
-})
+    res.send(doc);
+  });
+});
 
+app.delete('/api/blogs/:id', function(req, res) {
+  console.log('Recieved DELETE request for _id: ' + req.params.id);
+  Blog.remove({_id: req.params.id}, function(err) {
+    res.send({_id: req.params.id});
+  });
+});
+
+app.put('/api/blogs/:id', function(req, res) {
+  console.log('Received an UPDATE request for _id: ' + req.params.id);
+  Blog.update({_id: req.params.id}, req.body, function(err) {
+    res.send({_id: req.params.ed});
+  });
+});
 var port = 3000;
 
 app.listen(port);
