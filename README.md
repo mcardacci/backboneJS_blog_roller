@@ -27,6 +27,7 @@ npm install body-parser
 ```
 * Navigate [here](https://www.mongodb.org/downloads) to download the MongoDB database.
 ..* In order to be able to write to Mongodb you need to change it's permissions.
+
 ..1. Go back into terminal and type ``` cd /data ```
 ..2. ``` ls -ld /data/db ``` It should say "drwxr-xr-x"
 ..3. Change the access rights: ``` sudo chmod 0755 /data/db ```
