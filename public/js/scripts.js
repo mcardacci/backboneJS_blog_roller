@@ -10,7 +10,9 @@ var Blog = Backbone.Model.extend({
 
 // Backbone Collection
 
-var Blogs = Backbone.Collection.extend({});
+var Blogs = Backbone.Collection.extend({
+	url: 'http://localhost:3000/api/blogs'
+});
 
 // instantiates two Blogs
 
@@ -89,6 +91,17 @@ var BlogsView = Backbone.View.extend({
       }, 30);
     },this);
     this.model.on('remove', this.render, this);
+
+    this.model.fetch({
+    	success: function(response) {
+        response.toJSON().forEach(function(blog) {
+          console.log("You've uploaded a blog with the id of " + blog._id)
+        })
+    	},
+    	error: function() { 
+    		console.log("You've done something terribly wrong.")
+    	}
+    })
   },
   render: function() {
     var self = this;
