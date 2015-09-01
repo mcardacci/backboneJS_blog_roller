@@ -45,3 +45,9 @@ var port = 3000;
 
 app.listen(port);
 console.log('server on ' + port);
+
+//NOTES
+//once you have node server, mongod and mongo running in terminal, here are some commands:
+//show dbs - Gives you list of tables
+//use blogroll \n show collections
+//db.blogs.find().pretty() - shows a prettified version of table rows
