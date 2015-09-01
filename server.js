@@ -2,7 +2,7 @@ var express = require('express');
 var mongoose = require('mongoose');
 var bodyParser = require('body-parser');
 
-mongoose.connect('mongodb://127.0.0.1/blogroll');
+mongoose.connect('mongodb://localhost/blogroll');
 
 var Schema = mongoose.Schema;
 
