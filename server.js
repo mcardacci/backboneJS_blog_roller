@@ -16,14 +16,6 @@ mongoose.model('Blog', BlogSchema);
 
 var Blog = mongoose.model('Blog');
 
-// var blog = new Blog({
-//  author: "Marco",
-//  title: "Marco's Blog",
-//  url: "http://marcosblog.com"
-// });
-
-// blog.save();
-
 var app = express();
 
 app.use(express.static(__dirname + '/public'));
