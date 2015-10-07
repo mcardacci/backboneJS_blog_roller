@@ -36,8 +36,8 @@ npm install body-parser
 
 ## Run the app and have fun
 1. Open three terminal windows
-2. First window type ``` node server ```
-3. Second type ``` mongo ```
-4. Third type ``` mongod ```
+2. In the third type ``` mongod ```
+3. In the second type ``` mongo ```
+4. In the first window type ``` node server ```
 5. Navigate to localhost:3000 in your browser and enjoy THE MIGHTY BLOG AGGREGATOR.
 
