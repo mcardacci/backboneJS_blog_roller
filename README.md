@@ -7,7 +7,7 @@
 * Mongoose 4.1.3
 * Express 4.13.3
 * Body-Parser 1.13.3
---------------------------
+
 
 ## Setup
 * Install brew [here](http://brew.sh/)
